@@ -1,4 +1,470 @@
+:root {
+    --text: #161510;
+    --background: #f9f8f6;
+    --primary: #9f9677;
+    --secondary: #acc4ab;
+    --accent: #90b19d;
+}
+
+
+/* ------------------------------
+   General Styles
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color:pink;
-    
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    transition: 0.2s ease;
+}
+
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+.site-header {
+    background: var(--primary);
+    color: var(--background);
+    padding: 48px 8% 42px;
+}
+
+.header-content {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.eyebrow,
+.section-label {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+}
+
+.site-header .eyebrow {
+    color: var(--background);
+    opacity: 0.85;
+}
+
+.site-header h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin: 10px 0 12px;
+}
+
+.tagline {
+    color: var(--background);
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+.site-nav {
+    background: var(--background);
+    border-bottom: 1px solid var(--secondary);
+}
+
+.nav-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.site-nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px 18px;
+    border-bottom: 3px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: var(--primary);
+    border-bottom-color: var(--accent);
+}
+
+
+/* ------------------------------
+   Hero Section
+------------------------------ */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 55px;
+    align-items: center;
+    padding: 78px 5%;
+}
+
+.hero h2 {
+    color: var(--text);
+    font-size: 2.7rem;
+    line-height: 1.15;
+    margin: 12px 0 20px;
+}
+
+.hero-text > p:not(.section-label) {
+    max-width: 650px;
+    color: var(--text);
+    font-size: 1.08rem;
+    margin-bottom: 14px;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.button {
+    background: var(--primary);
+    color: var(--background);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: var(--accent);
+    color: var(--text);
+}
+
+.text-link {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   Market Graphic
+------------------------------ */
+
+.market-card {
+    min-height: 300px;
+    background: var(--secondary);
+    border-radius: 12px;
+    padding: 26px;
+    border: 1px solid var(--accent);
+    box-shadow: 0 12px 30px rgba(22, 21, 16, 0.12);
+}
+
+.card-top,
+.chart-labels {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card-top {
+    color: var(--text);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+.status {
+    color: var(--text);
+}
+
+.chart {
+    height: 175px;
+    margin-top: 28px;
+    position: relative;
+    border-left: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 43px,
+        rgba(22, 21, 16, 0.08) 44px
+    );
+}
+
+.chart-line {
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 50%;
+    height: 3px;
+    background: var(--primary);
+    transform: rotate(-12deg);
+    box-shadow: 0 0 10px rgba(159, 150, 119, 0.45);
+}
+
+.chart-point {
+    width: 11px;
+    height: 11px;
+    background: var(--background);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.point-1 {
+    left: 7%;
+    top: 61%;
+}
+
+.point-2 {
+    left: 27%;
+    top: 55%;
+}
+
+.point-3 {
+    left: 48%;
+    top: 47%;
+}
+
+.point-4 {
+    left: 69%;
+    top: 38%;
+}
+
+.point-5 {
+    right: 6%;
+    top: 28%;
+}
+
+.chart-labels {
+    color: var(--text);
+    font-size: 0.78rem;
+    margin-top: 15px;
+}
+
+
+/* ------------------------------
+   Introduction Sections
+------------------------------ */
+
+.intro-section {
+    padding: 30px 5% 80px;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2 {
+    color: var(--text);
+    font-size: 2rem;
+    margin-top: 6px;
+}
+
+.intro-section > p {
+    max-width: 950px;
+}
+
+
+/* ------------------------------
+   Topic Cards
+------------------------------ */
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.topic-card {
+    background: var(--background);
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: 0 5px 15px rgba(22, 21, 16, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(22, 21, 16, 0.1);
+}
+
+.topic-card .number {
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.topic-card h3 {
+    color: var(--text);
+    margin: 10px 0;
+}
+
+.topic-card p {
+    color: var(--text);
+    opacity: 0.8;
+}
+
+
+/* ------------------------------
+   Big Question Section
+------------------------------ */
+
+.question-section {
+    background: var(--secondary);
+    color: var(--text);
+    margin: 0 5% 75px;
+    padding: 42px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    border: 1px solid var(--accent);
+}
+
+.question-section .section-label {
+    color: var(--text);
+    opacity: 0.7;
+}
+
+.question-section h2 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    margin-top: 8px;
+}
+
+.question-section p {
+    color: var(--text);
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+.site-footer {
+    background: var(--primary);
+    color: var(--background);
+    padding: 35px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.site-footer h3 {
+    color: var(--background);
+}
+
+.site-footer p {
+    color: var(--background);
+    margin-top: 4px;
+    opacity: 0.85;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.footer-links a {
+    color: var(--background);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   Mobile / Smaller Screens
+------------------------------ */
+
+@media (max-width: 800px) {
+
+    .site-header {
+        padding: 40px 6%;
+    }
+
+    .site-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero,
+    .question-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 55px 6%;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-nav a {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+
+    .site-footer {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .site-header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2.1rem;
+    }
+
+    .button-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .question-section {
+        margin: 0 5% 50px;
+        padding: 30px;
+    }
 }
