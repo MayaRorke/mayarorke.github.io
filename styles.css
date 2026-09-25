@@ -7,9 +7,6 @@
 }
 
 
-/* ------------------------------
-   General Styles
------------------------------- */
 
 * {
     box-sizing: border-box;
@@ -37,10 +34,6 @@ a {
     transition: 0.2s ease;
 }
 
-
-/* ------------------------------
-   Header
------------------------------- */
 
 .site-header {
     background: var(--primary);
@@ -79,10 +72,6 @@ a {
 }
 
 
-/* ------------------------------
-   Navigation
------------------------------- */
-
 .site-nav {
     background: var(--background);
     border-bottom: 1px solid var(--secondary);
@@ -111,9 +100,6 @@ a {
 }
 
 
-/* ------------------------------
-   Hero Section
------------------------------- */
 
 .hero {
     display: grid;
@@ -170,9 +156,6 @@ a {
 }
 
 
-/* ------------------------------
-   Market Graphic
------------------------------- */
 
 .market-card {
     min-height: 300px;
@@ -268,10 +251,6 @@ a {
 }
 
 
-/* ------------------------------
-   Introduction Sections
------------------------------- */
-
 .intro-section {
     padding: 30px 5% 80px;
 }
@@ -290,10 +269,6 @@ a {
     max-width: 950px;
 }
 
-
-/* ------------------------------
-   Topic Cards
------------------------------- */
 
 .topic-grid {
     display: grid;
@@ -332,9 +307,6 @@ a {
 }
 
 
-/* ------------------------------
-   Big Question Section
------------------------------- */
 
 .question-section {
     background: var(--secondary);
@@ -364,9 +336,6 @@ a {
 }
 
 
-/* ------------------------------
-   Footer
------------------------------- */
 
 .site-footer {
     background: var(--primary);
@@ -404,10 +373,6 @@ a {
     text-decoration: underline;
 }
 
-
-/* ------------------------------
-   Mobile / Smaller Screens
------------------------------- */
 
 @media (max-width: 800px) {
 
@@ -467,4 +432,43 @@ a {
         margin: 0 5% 50px;
         padding: 30px;
     }
+
+.results-group {
+    margin-top: 60px;
+}
+
+.results-group .section-heading h3 {
+    color: var(--text);
+    font-size: 1.5rem;
+    margin-top: 6px;
+}
+
+.result-graph {
+    background: var(--background);
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    padding: 28px;
+    margin-top: 28px;
+    box-shadow: 0 5px 15px rgba(22, 21, 16, 0.05);
+}
+
+.result-graph h3 {
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.result-graph p {
+    color: var(--text);
+    opacity: 0.8;
+    margin-bottom: 22px;
+}
+
+.result-graph img {
+    display: block;
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+}
 }
