@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+
+<meta name="description" content="Learn how traditional statistical models such as linear regression can be used to predict stock returns and provide an interpretable baseline for machine learning models.">
+
+<meta name="keywords" content="linear regression, statistical models, stock prediction, stock returns, financial modeling, AI, stock market">
+
+<title>Traditional Models | Can AI Beat the Market?</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-content">
+
+        <p class="eyebrow">CIS 300 • WEB DESIGN & DEVELOPMENT</p>
+
+        <h1>Can AI Beat the Market?</h1>
+
+        <p class="tagline">
+            Exploring how statistical and machine learning models can predict stock returns.
+        </p>
+
+    </div>
+
+</header>
+
+<nav class="site-nav">
+
+    <div class="nav-container">
+
+        <a href="index.html">Home</a>
+        <a href="problem.html">The Problem</a>
+        <a href="traditional.html" class="active">Traditional Models</a>
+        <a href="machine-learning.html">Machine Learning</a>
+        <a href="features.html">Features</a>
+        <a href="results.html">Results</a>
+
+    </div>
+
+</nav>
+
+
+<main>
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="section-label">TRADITIONAL APPROACH</p>
+
+            <h2>Starting With a Simpler Model</h2>
+
+            <p>
+                Before testing more complex machine learning methods, this study uses a traditional statistical method: linear regression.
+            </p>
+
+            <p>
+                Linear regression is a simple and easier way to find whether the financial features in the dataset have useful information about future stock returns.
+            </p>
+
+        </div>
+
+
+        <div class="market-card">
+
+            <div class="card-top">
+
+                <span>LINEAR REGRESSION</span>
+
+                <span class="status">BASELINE MODEL</span>
+
+            </div>
+
+            <div class="chart">
+
+                <div class="chart-line"></div>
+
+                <div class="chart-point point-1"></div>
+                <div class="chart-point point-2"></div>
+                <div class="chart-point point-3"></div>
+                <div class="chart-point point-4"></div>
+                <div class="chart-point point-5"></div>
+
+            </div>
+
+            <div class="chart-labels">
+
+                <span>FEATURES</span>
+                <span>RETURN</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Introduction -->
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">THE STARTING POINT</p>
+
+            <h2>What Is Linear Regression?</h2>
+
+        </div>
+
+        <p>
+            Linear regression is a statistical method that models the relationship between one or more input variables and an outcome. The model uses financial features such as previous returns, volatility, trading volume, moving averages, momentum, and market returns to predict future stock returns.
+        </p>
+
+    </section>
+
+
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">WHY USE IT?</p>
+
+            <h2>A Useful Baseline</h2>
+
+        </div>
+
+
+        <div class="card-grid">
+
+            <article class="info-card">
+
+                <h3>Simple</h3>
+
+                <p>
+                    Linear regression is simpler compared with the machine learning models tested later in the study. This makes it useful as a starting point for comparison.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <h3>Interpretable</h3>
+
+                <p>
+                    The model provides a way to look at the relationship between the input features and predicted returns without relying on a complex structure.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <h3>Fast</h3>
+
+                <p>
+                    Linear regression can be trained and used for predictions quickly. This makes it useful when comparing prediction performance with models that require longer computation.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">WHAT THE MODEL USES</p>
+
+            <h2>Financial Features</h2>
+
+        </div>
+
+        <p>
+            The regression model does not try to predict stock prices directly. It uses financial features to estimate future stock returns. These features were chosen to represent recent price behavior, volatility, trading activity, momentum, and broader market movement.
+        </p>
+
+
+        <div class="card-grid">
+
+            <article class="info-card">
+
+                <h3>Previous Returns</h3>
+
+                <p>
+                    Recent stock returns give information about how the stock has moved over time.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <h3>Volatility</h3>
+
+                <p>
+                    Volatility measures how much a stock's returns have varied and helps show recent changes in market risk.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <h3>Trading Volume</h3>
+
+                <p>
+                    Trading volume represents the amount of market activity surrounding a stock and can show information about participation and demand.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <h3>Moving Averages</h3>
+
+                <p>
+                    Moving averages show recent price trends and can help find the direction of a stock's movement over time.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <h3>Momentum</h3>
+
+                <p>
+                    Momentum sees recent price movement and helps measure whether a stock has been trending upward or downward.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <h3>Market Returns</h3>
+
+                <p>
+                    Market-level returns give broad information about overall market movement that may affect individual stocks.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="question-section">
+
+        <div>
+
+            <p class="section-label">MULTIPLE TIME HORIZONS</p>
+
+            <h2>
+                The model was tested across more than just the next trading day.
+            </h2>
+
+        </div>
+
+        <div>
+
+            <p>
+                Predictions were evaluated at seven different horizons: 1 day, 5 days, 10 days, 1 month, 6 months, 1 year, and 5 years.This lets the study examine whether using a simple statistical model changes as the prediction window becomes longer.
+            </p>
+
+            <p style="margin-top: 15px;">
+                The same horizons were used when comparing linear regression with Random Forest, XGBoost, and neural networks.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">NEXT STEP</p>
+
+            <h2>What Happens When the Model Gets More Complex?</h2>
+
+        </div>
+
+        <p>
+            Linear regression is an important baseline, but it assumes a simple relationship between the features and future returns. Financial markets can have nonlinear relationships and interactions that a basic regression model might not be able to see.
+        </p>
+
+        <p style="margin-top: 15px;">
+            The next step in this study is to test whether machine learning models can find additional patterns and improve prediction performance.
+        </p>
+
+        <div class="button-row">
+
+            <a href="machine-learning.html" class="button">
+                Explore Machine Learning
+            </a>
+
+            <a href="results.html" class="text-link">
+                View Results →
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div>
+
+        <h3>Can AI Beat the Market?</h3>
+
+        <p>
+            CIS 300 Web Design and Development
+        </p>
+
+        <p>
+            Created by Maya Rorke
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="results.html">Results</a>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>
