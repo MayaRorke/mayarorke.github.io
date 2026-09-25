@@ -791,8 +791,12 @@ a {
 }
 
 .video-section video {
-    width: 100%;
-    max-width: 750px;
+    display: block;
+    width: 70%;
+    max-width: 650px;
+    max-height: 370px;
+    height: auto;
+    margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(22, 21, 16, 0.12);
 }
