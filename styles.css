@@ -792,10 +792,9 @@ a {
 
 .video-section video {
     display: block;
-    width: 70%;
-    max-width: 650px;
-    max-height: 370px;
-    height: auto;
+    width: 600px;
+    height: 338px;
+    max-width: 100%;
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(22, 21, 16, 0.12);
