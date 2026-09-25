@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="View the results of statistical and machine learning models predicting stock returns across seven prediction horizons, including model performance and computational cost.">
+    <meta name="keywords" content="stock prediction results, machine learning results, linear regression, Random Forest, XGBoost, neural network, R², directional accuracy, RMSE">
     <title>Results | Can AI Beat the Market?</title>
 
     <link rel="stylesheet" href="styles.css">
@@ -187,125 +188,211 @@
 
         <section class="intro-section">
 
-            <div class="section-heading">
+    <div class="section-heading">
 
-                <p class="section-label">PROJECT OUTPUTS</p>
+        <p class="section-label">PROJECT OUTPUTS</p>
 
-                <h2>Results across prediction horizons</h2>
+        <h2>Results across prediction horizons</h2>
 
-            </div>
+    </div>
+
+    <p>
+        The results below show how model performance changes across different prediction horizons.
+        The table summarizes the best-performing model at each horizon based on the evaluation
+        metrics used in this study.
+    </p>
+
+
+    <div class="results-table-wrapper">
+
+        <table class="results-table">
+
+            <thead>
+
+                <tr>
+                    <th>Prediction Horizon</th>
+                    <th>Best Model</th>
+                    <th>R²</th>
+                    <th>Directional Accuracy</th>
+                    <th>Training Time</th>
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td>1 Day</td>
+                    <td>Random Forest</td>
+                    <td>0.0078</td>
+                    <td>52.40%</td>
+                    <td>396.18 s</td>
+                </tr>
+
+                <tr>
+                    <td>5 Days</td>
+                    <td>Linear Regression</td>
+                    <td>0.0067</td>
+                    <td>53.67%</td>
+                    <td>0.23 s</td>
+                </tr>
+
+                <tr>
+                    <td>10 Days</td>
+                    <td>Linear Regression</td>
+                    <td>0.0117</td>
+                    <td>55.22%</td>
+                    <td>0.27 s</td>
+                </tr>
+
+                <tr>
+                    <td>1 Month</td>
+                    <td>Linear Regression</td>
+                    <td>0.0152</td>
+                    <td>56.22%</td>
+                    <td>0.49 s</td>
+                </tr>
+
+                <tr>
+                    <td>6 Months</td>
+                    <td>Linear Regression</td>
+                    <td>0.0444</td>
+                    <td>66.80%</td>
+                    <td>0.46 s</td>
+                </tr>
+
+                <tr>
+                    <td>1 Year</td>
+                    <td>XGBoost</td>
+                    <td>0.0877</td>
+                    <td>71.45%</td>
+                    <td>4.21 s</td>
+                </tr>
+
+                <tr>
+                    <td>5 Years</td>
+                    <td>XGBoost</td>
+                    <td>0.1355</td>
+                    <td>87.05%</td>
+                    <td>2.00 s</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <div class="results-group">
+
+        <div class="section-heading">
+
+            <p class="section-label">MODEL PERFORMANCE</p>
+
+            <h3>How prediction accuracy changes</h3>
+
+        </div>
+
+
+        <div class="result-graph">
+
+            <h3>Directional Accuracy vs. Prediction Horizon</h3>
 
             <p>
-                The results below show how model performance changes across different prediction horizons. These outputs come directly from the analysis performed for this project.
+                Directional accuracy measures how often a model correctly predicts whether the future return is positive or negative.
             </p>
 
+            <img
+                src="DirectionalAccuracyvsPredictionHorizon.png"
+                alt="Line graph showing directional accuracy for each model across prediction horizons"
+            >
 
-            <div class="results-group">
-
-                <div class="section-heading">
-
-                    <p class="section-label">MODEL PERFORMANCE</p>
-
-                    <h3>How prediction accuracy changes</h3>
-
-                </div>
+        </div>
 
 
-                <div class="result-graph">
+        <div class="result-graph">
 
-                    <h3>Directional Accuracy vs. Prediction Horizon</h3>
+            <h3>R² vs. Prediction Horizon</h3>
 
-                    <p>
-                        Directional accuracy measures how often a model correctly predicts whether the future return is positive or negative.
-                    </p>
+            <p>
+                R² measures the proportion of variation in future returns explained by the model.
+                Higher values show greater explanatory power.
+            </p>
 
-                    <img
-                        src="DirectionalAccuracyvsPredictionHorizon.png"
-                        alt="Line graph showing directional accuracy for each model across prediction horizons"
-                    >
+            <img
+                src="R^2vsPredictionHorizon.png"
+                alt="Line graph showing R-squared values for each model across prediction horizons"
+            >
 
-                </div>
-
-
-                <div class="result-graph">
-
-                    <h3>R² vs. Prediction Horizon</h3>
-
-                    <p>
-                        R² measures the proportion of variation in future returns explained by the model. Higher values show a greater explanatory power.
-                    </p>
-
-                    <img
-                        src="R^2vsPredictionHorizon.png"
-                        alt="Line graph showing R-squared values for each model across prediction horizons"
-                    >
-
-                </div>
+        </div>
 
 
-                <div class="result-graph">
+        <div class="result-graph">
 
-                    <h3>RMSE vs. Prediction Horizon</h3>
+            <h3>RMSE vs. Prediction Horizon</h3>
 
-                    <p>
-                        Root Mean Squared Error measures the size of prediction errors, with larger errors having more weight.
-                    </p>
+            <p>
+                Root Mean Squared Error measures the size of prediction errors, with larger errors having more weight.
+            </p>
 
-                    <img
-                        src="RMSEvsPredictionHorizon.png"
-                        alt="Line graph showing RMSE for each model across prediction horizons"
-                    >
+            <img
+                src="RMSEvsPredictionHorizon.png"
+                alt="Line graph showing RMSE for each model across prediction horizons"
+            >
 
-                </div>
+        </div>
 
-            </div>
-
-
-            <div class="results-group">
-
-                <div class="section-heading">
-
-                    <p class="section-label">COMPUTATIONAL COST</p>
-
-                    <h3>How much time do the models require?</h3>
-
-                </div>
+    </div>
 
 
-                <div class="result-graph">
+    <div class="results-group">
 
-                    <h3>Training Time vs. Prediction Horizon</h3>
+        <div class="section-heading">
 
-                    <p>
-                        Training time shows how long each model took to learn from the training data. This helps compare predictive performance with computational cost.
-                    </p>
+            <p class="section-label">COMPUTATIONAL COST</p>
 
-                    <img
-                        src="TrainingtimevsPredictionHorizon.png"
-                        alt="Line graph showing model training time across prediction horizons"
-                    >
+            <h3>How much time do the models require?</h3>
 
-                </div>
+        </div>
 
 
-                <div class="result-graph">
+        <div class="result-graph">
 
-                    <h3>Prediction Time vs. Prediction Horizon</h3>
+            <h3>Training Time vs. Prediction Horizon</h3>
 
-                    <p>
-                        Prediction time measures how long each trained model took to generate predictions for the test data.
-                    </p>
+            <p>
+                Training time shows how long each model took to learn from the training data.
+                This helps compare predictive performance with computational cost.
+            </p>
 
-                    <img
-                        src="PredictionTimevsPredictionHorizon.png"
-                        alt="Line graph showing model prediction time across prediction horizons"
-                    >
+            <img
+                src="TrainingtimevsPredictionHorizon.png"
+                alt="Line graph showing model training time across prediction horizons"
+            >
 
-                </div>
+        </div>
 
-            </div>
 
-        </section>
+        <div class="result-graph">
+
+            <h3>Prediction Time vs. Prediction Horizon</h3>
+
+            <p>
+                Prediction time measures how long each trained model took to generate predictions for the test data.
+            </p>
+
+            <img
+                src="PredictionTimevsPredictionHorizon.png"
+                alt="Line graph showing model prediction time across prediction horizons"
+            >
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <section class="question-section">
