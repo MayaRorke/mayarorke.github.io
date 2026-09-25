@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+    <meta name="description" content="Explore the features, models, prediction horizons, and interactive tools used in the Can AI Beat the Market research project.">
+    <meta name="keywords" content="AI, stock market, machine learning, stock prediction, XGBoost, Random Forest, Linear Regression, neural networks">
+
+    <title>Features | Can AI Beat the Market?</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+        <header class="site-header">
+        <div class="header-content">
+
+            <p class="eyebrow">CIS 300 • WEB DESIGN & DEVELOPMENT</p>
+
+            <h1>Can AI Beat the Market?</h1>
+
+            <p class="tagline">
+                Exploring how statistical and machine learning models can predict stock returns.
+            </p>
+
+        </div>
+    </header>
+
+
+    <nav class="site-nav">
+        <div class="nav-container">
+
+            <a href="index.html">Home</a>
+            <a href="problem.html">The Problem</a>
+            <a href="traditional.html">Traditional Models</a>
+            <a href="machine-learning.html">Machine Learning</a>
+            <a href="features.html" class="active">Features</a>
+            <a href="results.html">Results</a>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="page-hero">
+            <p class="eyebrow">EXPLORE THE RESEARCH</p>
+            <h1>What Goes Into a Stock Prediction?</h1>
+            <p>
+                Stock prediction models use different types of information to find patterns in historical market data. This page explores the features, prediction horizons, and models used in this project.
+            </p>
+        </section>
+
+
+        <section class="content-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">INPUT FEATURES</p>
+                <h2>What Does the Model Look At?</h2>
+                <p>
+                    The models in this project use historical market information as predictors. These features help the models find patterns that could be related to future stock returns.The historical data used in this project comes from
+                    <a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer">
+        Yahoo Finance
+                    </a>.
+                </p>
+            </div>
+
+            <div class="card-grid">
+
+                <div class="info-card">
+                    <h3>Returns</h3>
+                    <p>
+                        Historical returns show how a stock has performed over previous periods and give information about recent price movement.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Volatility</h3>
+                    <p>
+                        Volatility measures how much prices have changed over time. Higher volatility can make future returns more difficult to predict.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Trading Volume</h3>
+                    <p>
+                        Trading volume represents the amount of activity in a stock. Changes in volume can have information about market participation.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Moving Averages</h3>
+                    <p>
+                        Moving averages smooth historical prices and help find longer-term trends in the data.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Momentum</h3>
+                    <p>
+                        Momentum features measure recent price movement and can help models find whether a stock has been trending upward or downward.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Market Returns</h3>
+                    <p>
+                        Market-level returns have broader information about overall market conditions that may affect individual stocks.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-section alt-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">PREDICTION HORIZONS</p>
+                <h2>How Far Into the Future?</h2>
+                <p>
+                    The project compares predictions across seven different time horizons. This makes it possible to see whether model performance changes when the prediction window becomes longer.
+                </p>
+            </div>
+
+            <div class="horizon-grid">
+
+                <div class="horizon-card">
+                    <strong>1 Day</strong>
+                    <span>Very short-term</span>
+                </div>
+
+                <div class="horizon-card">
+                    <strong>5 Days</strong>
+                    <span>Short-term</span>
+                </div>
+
+                <div class="horizon-card">
+                    <strong>10 Days</strong>
+                    <span>Short-term</span>
+                </div>
+
+                <div class="horizon-card">
+                    <strong>1 Month</strong>
+                    <span>Medium-term</span>
+                </div>
+
+                <div class="horizon-card">
+                    <strong>6 Months</strong>
+                    <span>Medium-term</span>
+                </div>
+
+                <div class="horizon-card">
+                    <strong>1 Year</strong>
+                    <span>Longer-term</span>
+                </div>
+
+                <div class="horizon-card">
+                    <strong>5 Years</strong>
+                    <span>Long-term</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="interactive-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">INTERACTIVE EXPLORER</p>
+                <h2>Explore a Prediction</h2>
+                <p>
+                    Choose a prediction horizon and model to see how the model performed in the project.
+                </p>
+            </div>
+
+            <div class="prediction-explorer">
+
+                <div class="explorer-controls">
+
+                    <div class="form-group">
+                        <label for="horizonSelect">Prediction Horizon</label>
+
+                        <select id="horizonSelect">
+                            <option value="1d">1 Day</option>
+                            <option value="5d">5 Days</option>
+                            <option value="10d">10 Days</option>
+                            <option value="1m">1 Month</option>
+                            <option value="6m">6 Months</option>
+                            <option value="1y">1 Year</option>
+                            <option value="5y">5 Years</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="modelSelect">Model</label>
+
+                        <select id="modelSelect">
+                            <option value="linear">Linear Regression</option>
+                            <option value="random">Random Forest</option>
+                            <option value="xgboost">XGBoost</option>
+                            <option value="neural">Neural Network</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="explorer-result">
+
+                    <p class="eyebrow" id="resultHorizon">1 DAY</p>
+
+                    <h3 id="resultModel">Linear Regression</h3>
+
+                    <p id="resultDescription">
+                        A simple statistical model that estimates future returns using a linear relationship between the input features and the predicted return.
+                    </p>
+
+                    <div class="result-stats">
+
+                        <div class="result-stat">
+                            <span>R²</span>
+                            <strong id="r2Result">0.0005</strong>
+                        </div>
+
+                        <div class="result-stat">
+                            <span>Directional Accuracy</span>
+                            <strong id="accuracyResult">50.59%</strong>
+                        </div>
+
+                        <div class="result-stat">
+                            <span>RMSE</span>
+                            <strong id="rmseResult">0.0212</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">MODEL COMPLEXITY</p>
+                <h2>Four Different Approaches</h2>
+                <p>
+                    The project compares models with different levels of complexity. This helps determine whether more complicated machine learning method have better predictions than simpler statistical models.
+                </p>
+            </div>
+
+            <div class="card-grid">
+
+                <div class="info-card">
+                    <h3>Linear Regression</h3>
+                    <p>
+                        A statistical method that models the relationship between input variables and future returns using a linear equation.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Random Forest</h3>
+                    <p>
+                        A machine learning model that combines decision trees to find nonlinear relationships within the data.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>XGBoost</h3>
+                    <p>
+                        A gradient boosting algorithm that builds decision trees sequentially to improve predictions and capture more complex patterns.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Neural Network</h3>
+                    <p>
+                        A machine learning model capable of learning complexrelationships between multiple financial features.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">QUESTIONS?</p>
+
+                <h2>Ask About the Research</h2>
+
+                <p>
+                    Have a question about the models, prediction horizons, or results?
+                    Send it below and I will receive your message by email.
+                </p>
+            </div>
+
+
+            <form action="https://formspree.io/f/moevnkza"
+                  method="POST"
+                  class="research-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="topic">Research Topic</label>
+
+                    <select id="topic" name="topic" required>
+
+                        <option value="">Select a topic</option>
+
+                        <option value="prediction-horizons">
+                            Prediction Horizons
+                        </option>
+
+                        <option value="traditional-models">
+                            Traditional Models
+                        </option>
+
+                        <option value="machine-learning">
+                            Machine Learning
+                        </option>
+
+                        <option value="neural-networks">
+                            Neural Networks
+                        </option>
+
+                        <option value="results">
+                            Results
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Question or Comment</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="What would you like to know?"
+                        required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="form-button">
+                    Send Question
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>Can AI Beat the Market? | CIS 300 Final Project</p>
+    </footer>
+
+
+    <script>
+
+        const predictionData = {
+
+            "1d": {
+                name: "1 Day",
+                linear: {
+                    model: "Linear Regression",
+                    r2: "0.0005",
+                    accuracy: "50.59%",
+                    rmse: "0.0212",
+                    description: "A statistical model that estimates future returns using a linear relationship between the input features and the predicted return."
+                },
+                random: {
+                    model: "Random Forest",
+                    r2: "0.0078",
+                    accuracy: "52.40%",
+                    rmse: "0.0211",
+                    description: "A collection of decision trees that can find nonlinear relationships between financial features and short-term returns."
+                },
+                xgboost: {
+                    model: "XGBoost",
+                    r2: "-0.0082",
+                    accuracy: "51.56%",
+                    rmse: "0.0213",
+                    description: "A gradient boosting model that builds decision trees sequentially to improve predictions and find complex patterns."
+                },
+                neural: {
+                    model: "Neural Network",
+                    r2: "-0.0133",
+                    accuracy: "47.30%",
+                    rmse: "0.0213",
+                    description: "A layered model designed to learn complex relationships between financial features. For this horizon, its performance was worse than the other models."
+                }
+            },
+
+            "5d": {
+                name: "5 Days",
+                linear: {
+                    model: "Linear Regression",
+                    r2: "0.0067",
+                    accuracy: "53.67%",
+                    rmse: "0.0463",
+                    description: "Linear Regression gives a baseline for finding relationships between historical market features and five-day returns."
+                },
+                random: {
+                    model: "Random Forest",
+                    r2: "-0.0060",
+                    accuracy: "54.07%",
+                    rmse: "0.0466",
+                    description: "Random Forest finds nonlinear relationships using decision trees."
+                },
+                xgboost: {
+                    model: "XGBoost",
+                    r2: "-0.0095",
+                    accuracy: "53.76%",
+                    rmse: "0.0467",
+                    description: "XGBoost uses sequential decision trees to model more complex relationships in the financial data."
+                },
+                neural: {
+                    model: "Neural Network",
+                    r2: "-0.0315",
+                    accuracy: "46.47%",
+                    rmse: "0.0472",
+                    description: "The neural network did not outperform the simpler models at the five-day horizon."
+                }
+            },
+
+            "10d": {
+                name: "10 Days",
+                linear: {
+                    model: "Linear Regression",
+                    r2: "0.0117",
+                    accuracy: "55.22%",
+                    rmse: "0.0652",
+                    description: "Linear Regression explains a little of variation in ten-day returns while maintaining very low computational cost."
+                },
+                random: {
+                    model: "Random Forest",
+                    r2: "-0.0039",
+                    accuracy: "55.25%",
+                    rmse: "0.0657",
+                    description: "Random Forest finds nonlinear relationships but did not improve R² compared with Linear Regression at this horizon."
+                },
+                xgboost: {
+                    model: "XGBoost",
+                    r2: "-0.0035",
+                    accuracy: "54.53%",
+                    rmse: "0.0657",
+                    description: "XGBoost has a similar error level to Random Forest while having a slightly lower directional accuracy."
+                },
+                neural: {
+                    model: "Neural Network",
+                    r2: "-0.0982",
+                    accuracy: "45.31%",
+                    rmse: "0.0687",
+                    description: "The neural network performed worse than the other models for ten-day predictions."
+                }
+            },
+
+            "1m": {
+                name: "1 Month",
+                linear: {
+                    model: "Linear Regression",
+                    r2: "0.0152",
+                    accuracy: "56.22%",
+                    rmse: "0.0954",
+                    description: "Linear Regression explains a small amount of variation in one-month returns."
+                },
+                random: {
+                    model: "Random Forest",
+                    r2: "0.0063",
+                    accuracy: "55.95%",
+                    rmse: "0.0959",
+                    description: "Random Forest finds nonlinear patterns but has a slightly lower R² than Linear Regression at one month."
+                },
+                xgboost: {
+                    model: "XGBoost",
+                    r2: "0.0073",
+                    accuracy: "55.62%",
+                    rmse: "0.0958",
+                    description: "XGBoost has a similar predictive performance to Random Forest for the one-month horizon."
+                },
+                neural: {
+                    model: "Neural Network",
+                    r2: "-0.0981",
+                    accuracy: "45.44%",
+                    rmse: "0.1008",
+                    description: "The neural network did not outperform the other models at the one-month horizon."
+                }
+            },
+
+            "6m": {
+                name: "6 Months",
+                linear: {
+                    model: "Linear Regression",
+                    r2: "0.0444",
+                    accuracy: "66.80%",
+                    rmse: "0.2823",
+                    description: "Linear Regression explains more variation at six months and has about 67% directional accuracy."
+                },
+                random: {
+                    model: "Random Forest",
+                    r2: "0.0312",
+                    accuracy: "66.75%",
+                    rmse: "0.2842",
+                    description: "Random Forest performs similar to Linear Regression but has a slightly higher prediction error."
+                },
+                xgboost: {
+                    model: "XGBoost",
+                    r2: "0.0372",
+                    accuracy: "66.96%",
+                    rmse: "0.2833",
+                    description: "XGBoost has a slightly higher directional accuracy than the other models at six months."
+                },
+                neural: {
+                    model: "Neural Network",
+                    r2: "0.0059",
+                    accuracy: "66.99%",
+                    rmse: "0.2879",
+                    description: "The neural network has similar directional accuracy but explains less variation than the other models."
+                }
+            },
+
+            "1y": {
+                name: "1 Year",
+                linear: {
+                    model: "Linear Regression",
+                    r2: "0.0442",
+                    accuracy: "71.36%",
+                    rmse: "0.4954",
+                    description: "Linear Regression shows improved directional accuracy over shorter horizons but explains less variation than XGBoost."
+                },
+                random: {
+                    model: "Random Forest",
+                    r2: "0.0747",
+                    accuracy: "70.69%",
+                    rmse: "0.4874",
+                    description: "Random Forest can find nonlinear patterns and reduces prediction error compared with Linear Regression."
+                },
+                xgboost: {
+                    model: "XGBoost",
+                    r2: "0.0877",
+                    accuracy: "71.45%",
+                    rmse: "0.4840",
+                    description: "XGBoost has the highest R² of the tested models at the one-year horizon."
+                },
+                neural: {
+                    model: "Neural Network",
+                    r2: "0.0208",
+                    accuracy: "71.53%",
+                    rmse: "0.5014",
+                    description: "The neural network has a slightly higher directional accuracy but has a higher RMSE and lower R² than XGBoost."
+                }
+            },
+
+            "5y": {
+                name: "5 Years",
+                linear: {
+                    model: "Linear Regression",
+                    r2: "-0.0870",
+                    accuracy: "86.91%",
+                    rmse: "1.9991",
+                    description: "Linear Regression had high directional accuracy but has a negative R², which means it did not explain the variation in returns as well as XGBoost."
+                },
+                random: {
+                    model: "Random Forest",
+                    r2: "0.0099",
+                    accuracy: "86.89%",
+                    rmse: "1.9080",
+                    description: "Random Forest improves on Linear Regression in R² and prediction error but remains below XGBoost."
+                },
+                xgboost: {
+                    model: "XGBoost",
+                    r2: "0.1355",
+                    accuracy: "87.05%",
+                    rmse: "1.7828",
+                    description: "XGBoost had the highest R² and lowest RMSE of the tested models at five years, with 87.05% directional accuracy."
+                },
+                neural: {
+                    model: "Neural Network",
+                    r2: "-0.0140",
+                    accuracy: "85.76%",
+                    rmse: "1.9308",
+                    description: "The neural network had high directional accuracy but did not outperform XGBoost on R² or RMSE."
+                }
+            }
+
+        };
+
+
+        const horizonSelect = document.getElementById("horizonSelect");
+        const modelSelect = document.getElementById("modelSelect");
+
+        const resultHorizon = document.getElementById("resultHorizon");
+        const resultModel = document.getElementById("resultModel");
+        const resultDescription = document.getElementById("resultDescription");
+        const r2Result = document.getElementById("r2Result");
+        const accuracyResult = document.getElementById("accuracyResult");
+        const rmseResult = document.getElementById("rmseResult");
+
+
+        function updatePrediction() {
+
+            const horizon = horizonSelect.value;
+            const model = modelSelect.value;
+
+            const selectedPrediction = predictionData[horizon][model];
+
+            resultHorizon.textContent = predictionData[horizon].name.toUpperCase();
+            resultModel.textContent = selectedPrediction.model;
+            resultDescription.textContent = selectedPrediction.description;
+            r2Result.textContent = selectedPrediction.r2;
+            accuracyResult.textContent = selectedPrediction.accuracy;
+            rmseResult.textContent = selectedPrediction.rmse;
+
+        }
+
+
+        horizonSelect.addEventListener("change", updatePrediction);
+        modelSelect.addEventListener("change", updatePrediction);
+
+    </script>
+
+</body>
+
+</html>
