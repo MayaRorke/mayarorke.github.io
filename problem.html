@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Problem | Can AI Beat the Market?</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+
+            <p class="eyebrow">CIS 300 • WEB DESIGN & DEVELOPMENT</p>
+
+            <h1>Can AI Beat the Market?</h1>
+
+            <p class="tagline">
+                Exploring how statistical and machine learning models can predict stock returns.
+            </p>
+
+        </div>
+    </header>
+
+    <nav class="site-nav">
+        <div class="nav-container">
+
+            <a href="index.html">Home</a>
+            <a href="problem.html" class="active">The Problem</a>
+            <a href="traditional.html">Traditional Models</a>
+            <a href="machine-learning.html">Machine Learning</a>
+            <a href="features.html">Features</a>
+            <a href="results.html">Results</a>
+
+        </div>
+    </nav>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="section-label">THE PROBLEM</p>
+
+                <h2>
+                    Why is predicting stock returns so difficult?
+                </h2>
+
+                <p>
+                    Stock markets have a large amount of information, but that does not mean future returns are easy to predict. Prices can change because of economic conditions, company news, investor behavior, interest rates, and unexpected events.
+                </p>
+
+                <p>
+                    This makes stock prediction different from many traditional prediction problems. A pattern that appears in historical data might not continue into the future.
+                </p>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="card-top">
+                    <span>MARKET CONDITIONS</span>
+                    <span class="status">● UNCERTAIN</span>
+                </div>
+
+                <div class="chart">
+
+                    <div class="chart-line"></div>
+
+                    <div class="chart-point point-1"></div>
+                    <div class="chart-point point-2"></div>
+                    <div class="chart-point point-3"></div>
+                    <div class="chart-point point-4"></div>
+                    <div class="chart-point point-5"></div>
+
+                </div>
+
+                <div class="chart-labels">
+                    <span>Past Data</span>
+                    <span>Future Returns</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="intro-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">WHY IT IS HARD</p>
+
+                <h2>Financial markets are constantly changing.</h2>
+
+            </div>
+
+            <p>
+                One of the biggest challenges in stock prediction is that financial data is not completely linear over time. Relationships between variables can change as market conditions change. A model trained on one period might perform differently when it is tested on another period.
+            </p>
+
+            <br>
+
+            <p>
+                There is also a difference between finding a pattern and finding a pattern that can be used for future prediction. A model can perform decently on historical data but struggle when it has to use new information.
+            </p>
+
+        </section>
+
+
+        <section class="intro-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">KEY CHALLENGES</p>
+
+                <h2>What makes stock prediction challenging?</h2>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <article class="topic-card">
+
+                    <span class="number">01</span>
+
+                    <h3>Market Volatility</h3>
+
+                    <p>
+                        Stock returns can change quickly. Large changes can make future returns harder to estimate.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <span class="number">02</span>
+
+                    <h3>Changing Patterns</h3>
+
+                    <p>
+                        Historical relationships do not always remain the same. A pattern found in one period might disappear in another period.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <span class="number">03</span>
+
+                    <h3>Unexpected Events</h3>
+
+                    <p>
+                        News, economic changes, company announcements, and other unexpected events can affect stock prices in ways that historical data cannot completely interpret.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <span class="number">04</span>
+
+                    <h3>Noise in the Data</h3>
+
+                    <p>
+                        Financial markets have a large amount of random variation. Models must find patterns without just learning noise from historical observations.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <span class="number">05</span>
+
+                    <h3>Prediction Horizon</h3>
+
+                    <p>
+                        A model could perform differently depending on how far into the future it is predicting. This project compares several different time horizons.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="question-section">
+
+            <div>
+
+                <p class="section-label">A BIGGER QUESTION</p>
+
+                <h2>
+                    Can historical information actually provide an advantage?
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p>
+                    The Efficient Market Hypothesis argues that stock prices reflect available information, making it difficult to consistently find opportunities using information that is already known.
+                </p>
+
+                <br>
+
+                <p>
+                    This does not mean prediction models cannot find patterns in historical data. It just questions whether those patterns can give useful information about future returns.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="intro-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">THIS PROJECT</p>
+
+                <h2>Prediction across different time horizons</h2>
+
+            </div>
+
+            <p>
+                To see whether prediction performance changes over time, this project examines models across multiple prediction horizons. These horizons are 1-day, 5-day, 10-day, 1-month, 6-month, 1-year, and 5-years.
+            </p>
+
+            <br>
+
+            <p>
+                Comparing these horizons helps show whether models are more useful for shorter-term or longer-term return prediction. It also lets the results be compared across different levels of prediction difficulty.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div>
+
+            <h3>Can AI Beat the Market?</h3>
+
+            <p>
+                CIS 300 Web Design and Development
+            </p>
+
+            <p>
+                Created by Maya Rorke
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="results.html">Results</a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
