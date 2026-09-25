@@ -792,7 +792,7 @@ a {
 
 .video-section video {
     width: 100%;
-    max-width: 900px;
+    max-width: 750px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(22, 21, 16, 0.12);
 }
