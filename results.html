@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Results | Can AI Beat the Market?</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+
+            <p class="eyebrow">CIS 300 • WEB DESIGN & DEVELOPMENT</p>
+
+            <h1>Can AI Beat the Market?</h1>
+
+            <p class="tagline">
+                Exploring how statistical and machine learning models can predict stock returns.
+            </p>
+
+        </div>
+    </header>
+
+
+    <nav class="site-nav">
+        <div class="nav-container">
+
+            <a href="index.html">Home</a>
+            <a href="problem.html">The Problem</a>
+            <a href="traditional.html">Traditional Models</a>
+            <a href="machine-learning.html">Machine Learning</a>
+            <a href="features.html">Features</a>
+            <a href="results.html" class="active">Results</a>
+
+        </div>
+    </nav>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="section-label">THE RESULTS</p>
+
+                <h2>
+                    How well can these models actually predict returns?
+                </h2>
+
+                <p>
+                    The project compares statistical and machine learning models across multiple prediction horizons. The goal is not to find the model with the highest score, but to understand how prediction performance changes as the model and time horizon change.
+                </p>
+
+                <p>
+                    The models in the project include Linear Regression, Random Forest, XGBoost, and a neural network.
+                </p>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="card-top">
+                    <span>MODEL COMPARISON</span>
+                    <span class="status">● COMPLETE</span>
+                </div>
+
+                <div class="chart">
+
+                    <div class="chart-line"></div>
+
+                    <div class="chart-point point-1"></div>
+                    <div class="chart-point point-2"></div>
+                    <div class="chart-point point-3"></div>
+                    <div class="chart-point point-4"></div>
+                    <div class="chart-point point-5"></div>
+
+                </div>
+
+                <div class="chart-labels">
+                    <span>Models</span>
+                    <span>Performance</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="intro-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">MODELS TESTED</p>
+
+                <h2>Four approaches to prediction</h2>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <article class="topic-card">
+
+                    <span class="number">01</span>
+
+                    <h3>Linear Regression</h3>
+
+                    <p>
+                        A traditional statistical method that models the relationship between the input variables and future stock returns.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <span class="number">02</span>
+
+                    <h3>Random Forest</h3>
+
+                    <p>
+                        A machine learning method that uses decision trees to find patterns and relationships within the financial data.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <span class="number">03</span>
+
+                    <h3>XGBoost</h3>
+
+                    <p>
+                        A gradient boosting method that builds decision trees sequentially and focuses on improving prediction errors.
+                    </p>
+
+                </article>
+
+
+                <article class="topic-card">
+
+                    <span class="number">04</span>
+
+                    <h3>Neural Network</h3>
+
+                    <p>
+                        A more complex machine learning method that uses layers of nodes to learn relationships within the data.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="intro-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">HOW PERFORMANCE WAS MEASURED</p>
+
+                <h2>Comparing prediction performance</h2>
+
+            </div>
+
+            <p>
+                The models are tested using different metrics. Mean Absolute Error (MAE) measures the average size of prediction errors, Mean Squared Error (MSE) gives more weight to larger errors. R-squared (R²) measures how much variation in the target variable is explained by the model.
+            </p>
+
+            <br>
+
+            <p>
+                Directional accuracy is also useful because it measures how often the model correctly finds the direction of the return. It also finds prediction performance, and compares model runtime to see if the model is even worth using based on complexity and computational cost.
+            </p>
+
+        </section>
+
+
+        <section class="intro-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">PROJECT OUTPUTS</p>
+
+                <h2>Results across prediction horizons</h2>
+
+            </div>
+
+            <p>
+                The results below show how model performance changes across different prediction horizons. These outputs come directly from the analysis performed for this project.
+            </p>
+
+
+            <div class="results-group">
+
+                <div class="section-heading">
+
+                    <p class="section-label">MODEL PERFORMANCE</p>
+
+                    <h3>How prediction accuracy changes</h3>
+
+                </div>
+
+
+                <div class="result-graph">
+
+                    <h3>Directional Accuracy vs. Prediction Horizon</h3>
+
+                    <p>
+                        Directional accuracy measures how often a model correctly predicts whether the future return is positive or negative.
+                    </p>
+
+                    <img
+                        src="DirectionalAccuracyvsPredictionHorizon.png"
+                        alt="Line graph showing directional accuracy for each model across prediction horizons"
+                    >
+
+                </div>
+
+
+                <div class="result-graph">
+
+                    <h3>R² vs. Prediction Horizon</h3>
+
+                    <p>
+                        R² measures the proportion of variation in future returns explained by the model. Higher values show a greater explanatory power.
+                    </p>
+
+                    <img
+                        src="R^2vsPredictionHorizon.png"
+                        alt="Line graph showing R-squared values for each model across prediction horizons"
+                    >
+
+                </div>
+
+
+                <div class="result-graph">
+
+                    <h3>RMSE vs. Prediction Horizon</h3>
+
+                    <p>
+                        Root Mean Squared Error measures the size of prediction errors, with larger errors having more weight.
+                    </p>
+
+                    <img
+                        src="RMSEvsPredictionHorizon.png"
+                        alt="Line graph showing RMSE for each model across prediction horizons"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="results-group">
+
+                <div class="section-heading">
+
+                    <p class="section-label">COMPUTATIONAL COST</p>
+
+                    <h3>How much time do the models require?</h3>
+
+                </div>
+
+
+                <div class="result-graph">
+
+                    <h3>Training Time vs. Prediction Horizon</h3>
+
+                    <p>
+                        Training time shows how long each model took to learn from the training data. This helps compare predictive performance with computational cost.
+                    </p>
+
+                    <img
+                        src="TrainingtimevsPredictionHorizon.png"
+                        alt="Line graph showing model training time across prediction horizons"
+                    >
+
+                </div>
+
+
+                <div class="result-graph">
+
+                    <h3>Prediction Time vs. Prediction Horizon</h3>
+
+                    <p>
+                        Prediction time measures how long each trained model took to generate predictions for the test data.
+                    </p>
+
+                    <img
+                        src="PredictionTimevsPredictionHorizon.png"
+                        alt="Line graph showing model prediction time across prediction horizons"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="question-section">
+
+            <div>
+
+                <p class="section-label">WHAT THE RESULTS SHOW</p>
+
+                <h2>
+                    More complex models do not automatically solve the prediction problem.
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p>
+                    The results let different models be compared across different prediction horizons. A model can perform differently depending on the amount of time between the information used for prediction and the return being predicted.
+                </p>
+
+                <br>
+
+                <p>
+                    The results also show how the prediction performance and computational cost have a relationship. More complex models may require more time and resources to train.
+                </p>
+
+            </div>
+
+        </section>
+
+
+                <section class="intro-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">AN EXAMPLE</p>
+
+                <h2>Looking at the 5-year horizon</h2>
+
+            </div>
+
+            <p>
+                The 5-year horizon had some of the highest directional accuracy values in the project. XGBoost had an R² of 0.1355 and a directional accuracy of 87.05%.
+            </p>
+
+            <br>
+
+            <p>
+                The R² value shows that the model still explains only a limited amount of the variation in future returns. This is why multiple evaluation metrics are important when interpreting model performance. A model can have limited explanatory power while showing higher directional accuracy at a prediction horizon.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div>
+
+            <h3>Can AI Beat the Market?</h3>
+
+            <p>
+                CIS 300 Web Design and Development
+            </p>
+
+            <p>
+                Created by Maya Rorke
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="problem.html">The Problem</a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
