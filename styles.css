@@ -790,12 +790,21 @@ a {
     margin-bottom: 25px;
 }
 
+.video-section {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
 .video-section video {
-    display: block;
-    width: 600px;
-    height: 338px;
-    max-width: 100%;
-    margin: 0 auto;
+    display: block !important;
+    width: 600px !important;
+    height: 338px !important;
+    max-width: 90% !important;
+    max-height: 338px !important;
+    margin: 0 auto !important;
+    object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(22, 21, 16, 0.12);
 }
